@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos - align-content</title>
     <style>
-        .content{
-            height: 400px;
+        .container{
+            height: 350px;
             max-width: 300px;
-            margin: 0;
             display: flex;
             flex-wrap: wrap;
             border: 1px solid black;
@@ -25,17 +24,87 @@
         .stretch{
             align-content: stretch;
         }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
     </style>
 </head>
 <body>
-    <p>strectch</p>
+    <p>stretch</p>
     <div class="container stretch">
-        <div class="item">alex</div>
+        <div class="item">alex de souza passos alex de souza passos alex de souza passos </div>
         <div class="item">alex de</div>
-        <div class="item">alex de souza</div>
+        <div class="item">alex</div>
         <div class="item">alex de souza passos</div>
         <div class="item">alex passos</div>
-        <div class="item">souza</div>
+        <div class="item">souza passos</div>
+        <div class="item">passos</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">alex de souza</div>
+        <div class="item">alex de souza passos alex de souza passos</div>
+        <div class="item">alex</div>
+        <div class="item">alex de souza passos</div>
+        <div class="item">alex passos</div>
+        <div class="item">souza passos</div>
+        <div class="item">passos</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">alex de souza</div>
+        <div class="item">alex de</div>
+        <div class="item">alex</div>
+        <div class="item">alex de souza passos alex de souza passosalex de souza passos</div>
+        <div class="item">alex passos</div>
+        <div class="item">souza passos</div>
+        <div class="item">passos</div>
+    </div>
+    
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">alex de souza</div>
+        <div class="item">alex de</div>
+        <div class="item">alex</div>
+        <div class="item">alex de souza passos</div>
+        <div class="item">alex passos</div>
+        <div class="item">souza passos</div>
+        <div class="item">passos</div>
+    </div>    
+    
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">alex de souza</div>
+        <div class="item">alex de</div>
+        <div class="item">alex</div>
+        <div class="item">alex de souza passos</div>
+        <div class="item">alex passos</div>
+        <div class="item">souza passos</div>
+        <div class="item">passos</div>
+    </div>
+    
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">alex de souza passos alex de souza passos alex de souza passos</div>
+        <div class="item">alex de</div>
+        <div class="item">alex</div>
+        <div class="item">alex de souza passos</div>
+        <div class="item">alex passos</div>
+        <div class="item">souza passos</div>
         <div class="item">passos</div>
     </div>
 </body>
